@@ -186,7 +186,7 @@ libro_2 = input('Ingrese el título del 2° libro: ')
 if libro_1 != libro_2:
   print('Los libros tienen títulos diferentes.')
 
-  También es posible realizar esta comparación con valores numéricos.
+  También es posible realizar esta comparación con valores numéricos. 
 
   
 
