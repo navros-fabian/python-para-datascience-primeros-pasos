@@ -22,5 +22,8 @@ es usado para negar una condición. La expresión lógica not x es evaluada como
 
 Operadores lógicos más comunes
 
-a	b	AND	OR	NOT
-|0|0|0|0|1 |0|1|0|1|- |1|0|0|1|- |1|1|1|1|0
+a    b  AND  OR  NOT
+|0  |0  |0  |0  |1
+|0  |1  |0  |1  |- 
+|1  |0  |0  |1  |- 
+|1  |1  |1  |1  |0
