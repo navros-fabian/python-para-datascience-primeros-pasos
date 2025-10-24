@@ -27,3 +27,34 @@ a    b  AND  OR  NOT
 |0  |1  |0  |1  |- 
 |1  |0  |0  |1  |- 
 |1  |1  |1  |1  |0
+
+# Comandos de Control
+
+Cuando trabajamos con bucles, podemos controlar el flujo de ejecución dentro del bloque de código, lo que nos permite manipular la ejecución de los bucles. continue y break son los comandos de control que podemos usar con los bucles for y while.
+
+** continue ** interrumpe la iteración actual del bucle y salta a la siguiente, es decir, regresa al inicio del código. Como ejemplo, aquí hay un código que cuenta del 1 al 5 con un bucle for:
+
+
+´´´python
+for i in range(1, 6):
+    if i == 4:
+        continue
+    print(i)
+´´´
+Este código imprime todos los números del 1 al 5, excepto el 4. Cuando el valor de i es 4, continue salta a la siguiente iteración, omitiendo la instrucción print después de la condición en la iteración actual.
+
+Por otro lado, break detiene por completo la ejecución del bucle, saliendo del bloque de código. Utilicemos el mismo ejemplo de conteo, pero esta vez con break:
+
+´´´python
+for i in range(1, 6):
+    if i == 4:
+        break
+    print(i)
+´´´
+
+En este caso, el código imprime todos los números del 1 al 3. Cuando el valor de i es 4, break interrumpe por completo la ejecución del bucle y sale de él, ignorando cualquier otra iteración que esté dentro de la estructura.
+
+
+    
+
+
