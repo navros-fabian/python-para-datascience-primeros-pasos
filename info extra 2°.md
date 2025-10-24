@@ -107,5 +107,49 @@ print(cadena_mezclas)
 
 Salida: 'Pinturas: rojo, azul y amarillo. Verde: mezcla de azul y amarillo. Naranja: mezcla de rojo y amarillo. Morado: mezcla de rojo y azul'
 
+# **Para saber más: otras manipulaciones para las listas**
 
+Hemos estudiado algunos métodos en clase, y además de esos, podemos utilizar otros para manipular listas en Python. Vamos a conocerlos y ver ejemplos de cómo se utilizan. En todos los casos, utilizaremos la siguiente lista llamada "razas_de_perros":
 
+```
+razas_de_perros = ['Labrador Retriever',
+                   'Bulldog Francés',
+                   'Pastor Alemán',
+                   'Poodle']
+```
+
+El primer método es insert(), que permite insertar un elemento en una posición específica de la lista. La sintaxis es lista.insert(indice, elemento), donde "lista" es la lista que recibirá el nuevo elemento, "indice" es la posición donde se insertará el nuevo elemento y "elemento" es el nuevo elemento que se insertará.
+
+```
+razas_de_perros.insert(1, 'Golden Retriever')
+razas_de_perros
+```
+
+Salida: ['Labrador Retriever', 'Golden Retriever', 'Bulldog Francés', 'Pastor Alemán', 'Poodle']
+
+Siguiendo este enfoque, la estructura lista.insert(len(lista), elemento) es equivalente al uso del método append(), como vimos en el video anterior titulado "Manipulación de listas".
+
+El método pop() elimina el elemento en una posición específica de la lista y lo devuelve como salida al ejecutar el método. Solo necesitamos especificar, entre paréntesis, el índice del elemento que deseamos eliminar, y se eliminará de la lista. Por lo tanto, eliminemos la raza "Golden Retriever" que agregamos en el método anterior.
+
+```
+razas_de_perros.pop(1)
+```
+
+Salida: 'Golden Retriever'
+
+El método index() devuelve el índice de un elemento específico en la lista. Para hacerlo, especificamos el elemento entre paréntesis. Para encontrar el índice de la raza "Pastor Alemán" en la lista, hacemos lo siguiente:
+
+```
+razas_de_perros.index('Pastor Alemán')
+```
+
+Salida: 2
+
+El método sort() ordena los elementos de la lista en orden ascendente o descendente. Si son palabras, el orden se basa en el orden alfabético o en el orden inverso. Para ordenar los valores, simplemente llamamos al método sort(), y la lista se organizará en orden. Para ordenar alfabéticamente la lista de razas de perros, podemos usar el siguiente código:
+
+```
+razas_de_perros.sort()
+razas_de_perros
+```
+
+Salida: ['Bulldog Francés', 'Labrador Retriever', 'Pastor Alemán', 'Poodle']
